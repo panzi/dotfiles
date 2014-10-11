@@ -20,8 +20,8 @@ endif
 syn match bfMath    "[-+]"
 syn match bfPointer "[<>]"
 syn match bfLoop    "[[\]]"
-syn match bfIO      "[\.,]"
-syn match bfComment "[^+\-<>[\]\.,]\+"
+syn match bfIO      "[.,]"
+syn match bfComment "[^-+<>[\].,]\+"
 
 if version >= 508 || !exists("did_brainfuck_syn_inits")
   if version < 508
